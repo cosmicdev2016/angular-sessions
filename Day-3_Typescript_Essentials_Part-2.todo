@@ -1,6 +1,6 @@
 Typescript Essentials Part-2:
     ☐ Arrow functions
-        function cheer() {} -> function declaration
+        function cheer() {} -> function declaration & not anonymous
         let cheer = function() {} -> function expression & this is anonymous
         // arrow function
         setTimeout(() => {
@@ -28,7 +28,10 @@ Typescript Essentials Part-2:
         });
         console.log(highScores);
     ☐ String helper methods
+        ☐ strVar.repeat(<n>)
+        ☐ strVar.startsWith(<STR>), strVar.endsWith(<STR>), strVar.includes(<STR>) -> returns a boolean
     ☐ Checking numbers
+        ☐ Number.isFinite(), Number.isSafeInteger()
     ☐ Modules - 'import', 'export' and 'default'
 
 Overview:
