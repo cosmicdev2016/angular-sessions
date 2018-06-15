@@ -55,5 +55,4 @@ Overview:
         ☐ The import keyword receives primitive values, objects, or functions from another module.
         ☐ Using the default keyword gives a module a fallback function when exporting multiple values and 
         methods.
-        ☐ Overall, arrow functions and modules appear everywhere in es6 code. Stay on the look-out for these 
-        concepts.
+

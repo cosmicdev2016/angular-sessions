@@ -1,10 +1,10 @@
 Data Structures:
-    ☐ Define a Set and add data
-    ☐ Use enhanced for...of loop
+    ☐ Define a Set and add data -> add(value), has(), size, values()
+    ☐ Use enhanced for...of loop -> for (let element of setVar.values())
     ☐ Convert string to array using STR.split("")
     ☐ Create a Set from array
         ☐ Problem: Find unique chars in a string.
-    ☐ Create a Map and set data
+    ☐ Create a Map and set data -> set(K, V), has(K), size, entries()
     ☐ Use primitive, objects and functions as keys in the Map
     ☐ Create a map using 2d Array.
         // Fix for issue : Argument of type '(string | number)[][]' is not assignable to parameter of 
@@ -20,7 +20,7 @@ Data Structures:
         for(let [key, val] of map.entries()) {
             console.log(`${key} points to ${val}`);
         }
-    ☐ Use enhanced for...of loop to Iterate the map
+    ☐ Use enhanced for...of loop to Iterate the map -> for(let [key, val] of mapVar.entries())
         ☐ Problem: Find the char count in a given string. 
 
 Overview:
