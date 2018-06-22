@@ -1,4 +1,4 @@
-Closure:
+Closures:
     ☐ var & let : Function & Block scope, IIFE
     ☐ A closure is an inner function that has access to the outer (enclosing) function’s variables—scope chain. 
     ☐ The closure has three scope chains: 
