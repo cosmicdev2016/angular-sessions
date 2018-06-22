@@ -31,12 +31,16 @@ Typescript:
         ☐ (to have backward compatibility with IE and Edge browsers which don't support ES6 yet.)
 
 Important Concepts in Javascript:
+    ☐ Using var, let & const
+        ☐ Function vs block scope (https://edgecoders.com/function-scopes-and-block-scopes-in-javascript-25bbd7f293d7)
+        ☐ https://hackernoon.com/js-var-let-or-const-67e51dbb716f
     ☐ Variable scope and Hoisting (http://javascriptissexy.com/javascript-variable-scope-and-hoisting-explained/)
     ☐ Javascript Objects (http://javascriptissexy.com/javascript-objects-in-detail/)
     ☐ Javascript Prototype (http://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/)
     ☐ OO Javascript (http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)
     ☐ 'this' in Javascript (http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/)
     ☐ Closures (http://javascriptissexy.com/understand-javascript-closures-with-ease/)
+        ☐ Modules and IIFE (https://hashnode.com/post/do-es6-modules-make-the-case-of-iifes-obsolete-civ96wet80scqgc538un20es0)
     ☐ Apply, Call and Bind methods (http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals/)
     ☐ Dispatching custom events:
          ☐ https://eloquentjavascript.net/15_event.html
