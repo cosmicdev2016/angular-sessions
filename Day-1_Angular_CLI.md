@@ -1,10 +1,10 @@
-**Contents:**
+# Angular CLI
 
-> * [Angular CLI: Setup & Basic Troubleshooting](https://github.com/cosmicdev2016/angular-sessions/blob/master/Day-1_Angular_CLI.md#angular-cli-setup--basic-troubleshooting)
+> * [Setup & Basic Troubleshooting](https://github.com/cosmicdev2016/angular-sessions/blob/master/Day-1_Angular_CLI.md#angular-cli-setup--basic-troubleshooting)
 > * [Upgrading Angular 4|5 Projects](https://github.com/cosmicdev2016/angular-sessions/blob/master/Day-1_Angular_CLI.md#upgrading-angular-45-projects)
 > * [Upgrading Angular 2 Projects](https://github.com/cosmicdev2016/angular-sessions/blob/master/Day-1_Angular_CLI.md#upgrading-angular-2-projects)
 
-## Angular CLI: Setup & Basic Troubleshooting
+## Setup & Basic Troubleshooting
 
 Depending on the CLI version you're using, you might also need to add the `FormsModule`  to the `imports[]`  array in your `app.module.ts`  file (add it if you don't see it there). You might not fully understand what that all means but we're going to cover that in this course, no worries.
 
