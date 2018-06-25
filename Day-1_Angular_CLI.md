@@ -18,11 +18,11 @@ If you want to **dive deeper into the CLI** and learn more about its usage, have
 
 A lot of problems are solved by making sure you're using the latest version of NodeJS, npm and the CLI itself.
 
-**Updating NodeJS:**
+**Updating NodeJS**
 
 Go to nodejs.org and download the latest version - uninstall (all) installed versions on your machine first.
 
-**Updating npm:**
+**Updating npm**
 
 Run `[sudo] npm install -g npm`  (`sudo`  is only required on Mac/ Linux)
 
