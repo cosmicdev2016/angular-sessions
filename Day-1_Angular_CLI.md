@@ -55,6 +55,8 @@ You might already have another ng serve process running - make sure to quit that
 3. **My changes are not reflected in the browser (App is not compiling)**
 Check if the window running `ng serve`  displays an error. If that's not the case, make sure you're using the latest CLI version and try restarting your CLI.
 
+-----
+
 ## Upgrading Angular 4|5 Projects
 
 First, start by installing the Angular CLI 6 locally using the following command (Make sure you are inside your project's root folder):
@@ -91,6 +93,8 @@ Now you need to update the core packages/dependencies to Angular 6. Simply run t
 You can update RxJS using the ng update command:
 
 `ng update rxjs`
+
+-----
 
 ## Upgrading Angular 2 Projects
 
