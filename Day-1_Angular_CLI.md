@@ -4,7 +4,7 @@
 > 2. [Upgrading Angular 4|5 Projects](https://github.com/cosmicdev2016/angular-sessions/blob/master/Day-1_Angular_CLI.md#upgrading-angular-45-projects)
 > 3. [Upgrading Angular 2 Projects](https://github.com/cosmicdev2016/angular-sessions/blob/master/Day-1_Angular_CLI.md#upgrading-angular-2-projects)
 
-# Angular CLI: Setup & Basic Troubleshooting
+# 1. Angular CLI: Setup & Basic Troubleshooting
 
 Depending on the CLI version you're using, you might also need to add the `FormsModule`  to the `imports[]`  array in your `app.module.ts`  file (add it if you don't see it there). You might not fully understand what that all means but we're going to cover that in this course, no worries.
 
@@ -63,7 +63,7 @@ Check if the window running `ng serve`  displays an error. If that's not the cas
 
 -----
 
-## Upgrading Angular 4|5 Projects
+## 2. Upgrading Angular 4|5 Projects
 
 First, start by installing the Angular CLI 6 locally using the following command (Make sure you are inside your project's root folder):
 
@@ -102,7 +102,7 @@ You can update RxJS using the ng update command:
 
 -----
 
-## Upgrading Angular 2 Projects
+## 3. Upgrading Angular 2 Projects
 
 First check your versions of installed Angular CLI and other dependencies with:
 
