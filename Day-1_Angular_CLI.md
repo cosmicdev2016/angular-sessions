@@ -1,6 +1,8 @@
 **Contents:**
 
 > 1. [Angular CLI: Setup & Basic Troubleshooting](https://github.com/cosmicdev2016/angular-sessions/blob/master/Day-1_Angular_CLI.md#angular-cli-setup--basic-troubleshooting)
+> 2. [Upgrading Angular 4|5 Projects](https://github.com/cosmicdev2016/angular-sessions/blob/master/Day-1_Angular_CLI.md#upgrading-angular-45-projects)
+> 3. [Upgrading Angular 2 Projects](https://github.com/cosmicdev2016/angular-sessions/blob/master/Day-1_Angular_CLI.md#upgrading-angular-2-projects)
 
 # Angular CLI: Setup & Basic Troubleshooting
 
