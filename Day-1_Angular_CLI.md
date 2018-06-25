@@ -30,15 +30,15 @@ Global package:
 ```
 npm uninstall -g @angular/cli
 npm cache verify
-\# if npm version is < 5 then use `npm cache clean` 
+\#if npm version is < 5 then use `npm cache clean` 
 npm install -g @angular/cli@latest
-\# or for a specific version
+\#or for a specific version
 npm install -g @angular/cli@wished.version.here
 ```
 
 Local project package:
 ```
-rm -rf node_modules dist \# use rmdir /S/Q node_modules dist in Windows Command Prompt; use rm -r -fo node_modules,dist in Windows PowerShell 
+rm -rf node_modules dist \#use rmdir /S/Q node_modules dist in Windows Command Prompt; use rm -r -fo node_modules,dist in Windows PowerShell 
 npm install --save-dev @angular/cli@latest
 npm install
 ```
@@ -54,7 +54,7 @@ You might already have another ng serve process running - make sure to quit that
 3. **My changes are not reflected in the browser (App is not compiling)**
 Check if the window running `ng serve`  displays an error. If that's not the case, make sure you're using the latest CLI version and try restarting your CLI.
 
-##Upgrading Angular 4|5 Projects
+## Upgrading Angular 4|5 Projects
 
 First, start by installing the Angular CLI 6 locally using the following command (Make sure you are inside your project's root folder):
 `npm install @angular/cli@latest`
@@ -86,7 +86,7 @@ Now you need to update the core packages/dependencies to Angular 6. Simply run t
 You can update RxJS using the ng update command:
 `ng update rxjs`
 
-##Upgrading Angular 2 Projects
+## Upgrading Angular 2 Projects
 
 First check your versions of installed Angular CLI and other dependencies with:
 `ng --version` 
