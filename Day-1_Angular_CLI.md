@@ -38,7 +38,8 @@ npm install -g @angular/cli@wished.version.here
 
 Local project package:
 ```
-rm -rf node_modules dist #use rmdir /S/Q node_modules dist in Windows Command Prompt; use rm -r -fo node_modules,dist in Windows PowerShell 
+rm -rf node_modules dist
+#use rmdir /S/Q node_modules dist in Windows Command Prompt; use rm -r -fo node_modules,dist in Windows PowerShell 
 npm install --save-dev @angular/cli@latest
 npm install
 ```
@@ -57,6 +58,7 @@ Check if the window running `ng serve`  displays an error. If that's not the cas
 ## Upgrading Angular 4|5 Projects
 
 First, start by installing the Angular CLI 6 locally using the following command (Make sure you are inside your project's root folder):
+
 `npm install @angular/cli@latest`
 
 **Updating Configuration Files**
@@ -67,6 +69,7 @@ There are many differences between Angular 4|5 and Angular 6 such as
 2. Different versions of dependencies in `package.json` etc.
 
 You can update different configuration files automatically by running the following command from the project's root folder:
+
 `ng update @angular/cli`
 
 **Discovering Packages to Update**
@@ -74,29 +77,35 @@ You can update different configuration files automatically by running the follow
 Angular CLI has a new utility that allows you to automatcially analyze your project's `package.json` file and displays dependencies that need to be updated.
 
 Using your terminal from the root folder of your Angular 5 project run the following command:
+
 `ng update`
 
 **Upgrading Core Packages to Angular 6**
 
 Now you need to update the core packages/dependencies to Angular 6. Simply run the following command:
+
 `ng update @angular/core`
 
 **Upgrading RxJS**
 
 You can update RxJS using the ng update command:
+
 `ng update rxjs`
 
 ## Upgrading Angular 2 Projects
 
 First check your versions of installed Angular CLI and other dependencies with:
+
 `ng --version` 
 
 Next open your project `package.json` file then change the Angular CLI version. You can check the npm info page for Angular CLI package to find out the latest version.
 
 Next, delete your project `node_modules` folder and run the following command:
+
 `npm install`
 
 You don't need to change the versions of the other dependencies, the Angular CLI will take care of fetching latest versions.
 
 Now you can check again for installed versions with:
+
 `ng --version` 
