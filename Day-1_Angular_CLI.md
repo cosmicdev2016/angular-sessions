@@ -1,3 +1,7 @@
+**Contents:**
+
+1. [Angular CLI: Setup & Basic Troubleshooting](https://github.com/cosmicdev2016/angular-sessions/blob/master/Day-1_Angular_CLI.md#angular-cli-setup--basic-troubleshooting)
+
 # Angular CLI: Setup & Basic Troubleshooting
 
 Depending on the CLI version you're using, you might also need to add the `FormsModule`  to the `imports[]`  array in your `app.module.ts`  file (add it if you don't see it there). You might not fully understand what that all means but we're going to cover that in this course, no worries.
