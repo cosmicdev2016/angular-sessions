@@ -1,6 +1,6 @@
 **Contents:**
 
-1. [Angular CLI: Setup & Basic Troubleshooting](https://github.com/cosmicdev2016/angular-sessions/blob/master/Day-1_Angular_CLI.md#angular-cli-setup--basic-troubleshooting)
+> 1. [Angular CLI: Setup & Basic Troubleshooting](https://github.com/cosmicdev2016/angular-sessions/blob/master/Day-1_Angular_CLI.md#angular-cli-setup--basic-troubleshooting)
 
 # Angular CLI: Setup & Basic Troubleshooting
 
