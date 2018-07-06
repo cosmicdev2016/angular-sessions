@@ -1,0 +1,19 @@
+Overview:
+    ☐ Refer: Property_Event_Binding.jpg
+
+Binding to custom properties:
+    ☐ Passing data from parent to child component.
+    ☐ Parent HTML -> <child-component *ngFor="let parentElement of parentElements">
+    ☐ Child TS -> @Input() childPropertyName: {field: type, ...}
+        ☐ Add 'Input' to imports from @angular/core
+    ☐ Binding -> <child-component *ngFor="let parentElement of parentElements" [childPropertyName]="parentElement">
+    ☐ Alias -> [bookItem]="parentElement" and @Input('bookItem') childPropertyName: {field: type, ...}
+
+Binding to custom events:
+    ☐ Emit data from child to parent component.
+    ☐ Child TS -> @Output() customEvent = new EventEmitter<{field: type, ...}>()
+        ☐ Add 'Output' & 'EventEmitter' to imports from @angular/core
+    ☐ Parent HTML -> <child-component (customEvent)="onCustomEvent()"> 
+    ☐ Parent TS -> onCustomEvent(fromChild: {field: type, ...}) {}
+    ☐ Emitting -> this.customEvent.emit({field: this.value, ...});
+    ☐ Alias -> @Output('someEvent') customEvent = new EventEmitter<{field: type, ...}>() and <child-component (someEvent)="onCustomEvent()"> 
