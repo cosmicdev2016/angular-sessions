@@ -90,10 +90,13 @@ Directives:
     where, '#noServer' -> used to mark certain section of the template, that we want to show conditionally.
     ☐ Attribute directive (don't add or remove elements. Only change the elements they were placed on) -> 
     <p [ngStyle]="{backgroundColor: getColor()}"></p>
+    <p [ngStyle]="{backgroundColor: 'red'}"></p>
+    <p [ngStyle]="{backgroundColor: <boolean> ? 'red' : 'yellow'}"></p>
     where, [] is not part of the directive, but indicates that we want to bind some property on this directive.
     Here, 'ngStyle' happens to be property of the directive.
     ☐ Applying CSS classes dynamically with ngClass
     <p [ngClass]="{online: <boolean_expression>}"></p>
+    where, 'online' is a css class defined in css file.
     ☐ Outputting Lists with ngFor -> its a structural directive
     <app-server *ngFor="let server of servers; let i = index"></app-server>
 
