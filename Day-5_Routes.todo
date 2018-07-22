@@ -1,0 +1,44 @@
+Setting up and Loading Routes:
+    ☐ module.ts -> Import 'Routes' from @angular/router
+    ☐ module.ts -> const appRoutes: Routes = [
+        { path: '', component: <HOME_COMPONENT> }
+        { path: 'mypath', component: <COMPONENT_NAME> }, //navigates to -> localhost:4200/mypath
+    ]
+    ☐ Register routes in our app:
+        ☐ module.ts -> Import 'RouterModule' from @angular/router
+        ☐ module.ts -> Add 'RouterModule' imports section of @NgModule
+        imports: [
+            ...,
+            RouterModule.forRoot(appRoutes)
+        ]
+    ☐ Mark the place in our document where we want the angular router to load the component of the currently selected route.
+        ☐ Use 'router-outlet' directive in app.component.html
+        <router-outlet></router-outlet>
+
+Navigation with Router Links:
+    ☐ href -> reloads the app on every click of hyperlink
+    <li><a href="/"></a></li>
+    <li><a href="/mypath"></a></li>
+        ☐ Tab is not updated as well (currently active tab).
+    ☐ 'routerLink' directive -> prevents the app from being reloaded
+    <li><a routerLink="/"></a></li>
+    <li><a routerLink="/mypath"></a></li>
+    <li><a [routerLink]="['/mypath',...]"></a></li>
+        ☐ Tab is yet not updated (currently active tab).
+    ☐ 'routerLinkActive' directive
+    <li routerLinkActive="active"><a routerLink="/"></a></li>
+    <li routerLinkActive="active"><a routerLink="/mypath"></a></li>
+        ☐ By doing this you make all your routes as active
+        ☐ Home tab would still be always selected
+    ☐ 'routerLinkActiveOptions' directive
+    <li routerLinkActive="active" routerLinkActiveOptions="{exact: true}"><a routerLink="/"></a></li>
+    <li routerLinkActive="active"><a routerLink="/mypath"></a></li>
+
+Navigating programatically:
+    ☐ HomeComponent -> 
+        ☐ Need to access the registered routers
+            ☐ constructor(private router : Router)
+            Add import 'Router' from @angular/router 
+        ☐ Add a button to html and bind with (click) event
+        ☐ Add a listener in TS file -> navigate to one of the defined routes
+        this.router.navigate(['/mypath'])
