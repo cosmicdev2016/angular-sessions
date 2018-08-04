@@ -20,8 +20,38 @@ TD: Submitting and Using the Form:
         This will give you the DOM representation of the form.
     ☐ Get the value object representaion of the form:
         <form (ngSubmit)="onSubmit(f)" #f="ngForm">
-        In TS file: onSubmit(form: NgForm) { } (Need to import 'NgForm' it from @angular/forms)
-        'form.value' represents the value object bound to this form.
+        In TS file: onSubmit(form: NgForm) { } (Need to import 'NgForm' from @angular/forms)
+        'form.value' represents the form's json object bound to this form.
+
+TD: Accessing the Form with @ViewChild:
+    ☐ Change the form element HTML
+        <form (ngSubmit)="onSubmit()" #f>
+    ☐ Import 'ViewChild' from @angular/core
+    ☐ Add a variable to TS file and decorate with @ViewChild
+        @ViewChild('f') signupForm;
+        You need to pass the local reference to the decorator
+    ☐ Change onSubmit() method:
+        onSubmit() { console.log(this.signupForm); }
+
+TD: Adding Validation to check User Input:
+    ☐ required, email are some of the validators, you can add to your form controls.
+
+TD: Using the Form State:
+    ☐ Disable submit button if form is not valid. Use property binding on submit button to disable it:
+        [disabled]="!f.valid"
+    ☐ Taking advantage of the CSS classes angular adds to controls:
+        input.ng-invalid.ng-touched { border: 1px solid red; }
+
+TD: Output Validation Error Message:
+    ☐ Change the HTML form control
+        <input ... #email="ngModel">
+        <span class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email!</span>
+
+
+TD: Set default values:
+    ☐ Using property binding with ngModel
+        In HTML file: [ngModel]="<name of property>"
+        In TS file: property:string = "some value";
 
 
 Reactive approach:
