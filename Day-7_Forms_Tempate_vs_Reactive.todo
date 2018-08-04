@@ -24,7 +24,7 @@ TD: Submitting and Using the Form:
         'form.value' represents the form's json object bound to this form.
 
 TD: Accessing the Form with @ViewChild:
-    ☐ Change the form element HTML
+    ☐ Change the form element HTML.
         <form (ngSubmit)="onSubmit()" #f>
     ☐ Import 'ViewChild' from @angular/core
     ☐ Add a variable to TS file and decorate with @ViewChild
@@ -43,16 +43,49 @@ TD: Using the Form State:
         input.ng-invalid.ng-touched { border: 1px solid red; }
 
 TD: Output Validation Error Message:
-    ☐ Change the HTML form control
+    ☐ Change the HTML form control.
         <input ... #email="ngModel">
         <span class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email!</span>
-
+    This give you access to the javascript object bound to the control.
 
 TD: Set default values:
-    ☐ Using property binding with ngModel
+    ☐ Using property binding with ngModel.
         In HTML file: [ngModel]="<name of property>"
         In TS file: property:string = "some value";
 
+TD: Using ngModel with Two-Way-Binding:
+    ☐ Add another control to the form.
+        [(ngModel)]="answer"
+    ☐ Add 'answer' field to the TS file.
+    ☐ This also tell angular that its a control (similar to No binding) and you can find that control in your Form object. 
 
-Reactive approach:
-    ☐ 
+TD: Recap of 3 Kinds of Bindings that we have seen using ngModel:
+    ☐ No binding to just tell angular that its just a control.
+    ☐ One-way-binding to give that control a default value.
+    ☐ Two-way-binding to instantly output that value and do whatever you want with that value.
+
+TD: Grouping form controls:
+    ☐ To the <div id="user-data" ngModelGroup="userData" #userData="ngModelGroup">
+        #userData="ngModelGroup" gives you access to the javascript object representation of that form group.
+    ☐ We can display a message if a form group is not valid.
+    Add this outside of the form group </div>
+        <span class="help-block" *ngIf="!userData.valid && userData.touched">User data is invalid!</span>
+
+TD: Setting and Patching Form Values (without two-way-binding):
+    ☐ Using @ViewChild signupForm; Lets change the form data on click of suggest username button.
+    You need to pass the exact copy of the form value (with all fields) as a javascript object to the setValue() method.
+        this.signupForm.setValue({ ... });
+    ☐ Disadvantage of above is that it overrites all you form values, which you may not want. 
+    ☐ So another way of doing it is using patchValue() method, which allows you to update parts of the form.
+        this.signupForm.form.patchValue({ userDate: { userName: suggestedName } });
+    Don't provide any other form value.
+
+TD: Using Form Data:
+    ☐ Create a user object with empty values.
+    ☐ Extract the form values and update the user object.
+        this.user.username = this.signupForm.value.userData.username
+    ☐ Use string interpolation {{ user.username }} to display the values on the template.
+
+TD: Resetting the Form:
+    ☐ this.signupForm.reset();
+    ☐ You can also pass the same object as in setValue() to reset() which will then reset the form to specific values.
