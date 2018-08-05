@@ -51,19 +51,19 @@ Reactive: Getting Access to Controls:
 
 Reactive: Grouping Controls:
     ☐ Nest form groups: 
-    this.signupForm = new FormGroup({
-        'userData': new FormGroup({
-            'username': new FormControl(null),
-            'email': new FormControl(null)
-        }),
-        'gender': new FormControl('male'),
-        ...
-    });
+        this.signupForm = new FormGroup({
+            'userData': new FormGroup({
+                'username': new FormControl(null),
+                'email': new FormControl(null)
+            }),
+            'gender': new FormControl('male'),
+            ...
+        });
     ☐ Need to change HTML to reflect this change.
         ☐ Wrap the 2 controls in another div.
-        ☐ <div [formGroupName]="userData">
+            <div formGroupName="userData">
         ☐ Change the path to the form data, to get the validations working.
-        <span class="help-block" *ngIf="!signupForm.get('userData.username').valid && signupForm.get('userData.username').touched">Please enter a valid username!</span>
+            <span class="help-block" *ngIf="!signupForm.get('userData.username').valid && signupForm.get('userData.username').touched">Please enter a valid username!</span>
 
 Reactive: Array of Form Controls:
     ☐ Lets create a separate section in HTML.
@@ -85,7 +85,7 @@ Reactive: Array of Form Controls:
         ☐ Add a div below add hobby button to loop through all the controls we added to the form array.
             <div class="form-group" *ngFor="let hobbyControl of signupForm.get('hobbies').controls; let i = index">
                 <input type="text" class="form-control" [formControlName]="i">
-            <div/>
+            </div>
 
 Reactive: Creating Custom Validators:
     ☐ Scenario: Validate username does not match with any of forbidden names.
